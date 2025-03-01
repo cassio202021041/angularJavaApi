@@ -1,1 +1,21 @@
-<p>courses works!</p>
+<mat-card class="mb-3 light-margin">
+
+  <mat-toolbar class="bg-primary text-white ">
+    Cursos Disponíveis
+  </mat-toolbar>
+
+  <table class="table table-striped mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Curso</th>
+        <th scope="col">Categoria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses">
+        <td>{{course.name}}</td>
+        <td>{{course.category}}</td>
+      </tr>
+    </tbody>
+  </table>
+</mat-card>
